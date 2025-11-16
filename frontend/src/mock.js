@@ -4,11 +4,12 @@ export const authorInfo = {
   name: "Waddle",
   brandName: "Silence of Scribes",
   tagline: "Author • Graphic Designer",
-  bio: "Because if the cover can't impress you, what else can? I'm a fantasy & fiction author with 3 years of experience, established on Webnovel, Wattpad, RoyalRoad, and many more. I also create delightful book covers for myself and fellow authors.",
+  bio: "Live life the hard way. I'm a fantasy & fiction author with 3 years of experience, established on Webnovel, Wattpad, RoyalRoad, and many more. I also create delightful book covers for myself and fellow authors.",
   experience: "3 Years",
   platforms: ["Webnovel", "Wattpad", "RoyalRoad", "Scribble Hub"],
   genres: ["Fantasy", "Fiction", "Dark Fantasy", "Adventure"],
-  avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop"
+  avatar: "https://customer-assets.emergentagent.com/job_web-mockup/artifacts/xkajzn6l_Untitled%20design%20%286%29.png",
+  logo: "https://customer-assets.emergentagent.com/job_web-mockup/artifacts/pmx3ejds_Untitled%20design.png"
 };
 
 export const books = [
@@ -22,7 +23,8 @@ export const books = [
     reads: "2.4M",
     platform: "Webnovel",
     status: "Ongoing",
-    rating: 4.8
+    rating: 4.8,
+    isFeatured: true
   },
   {
     id: 2,
@@ -34,7 +36,8 @@ export const books = [
     reads: "1.8M",
     platform: "Wattpad",
     status: "Completed",
-    rating: 4.7
+    rating: 4.7,
+    isFeatured: false
   },
   {
     id: 3,
@@ -46,7 +49,8 @@ export const books = [
     reads: "1.2M",
     platform: "RoyalRoad",
     status: "Ongoing",
-    rating: 4.9
+    rating: 4.9,
+    isFeatured: false
   },
   {
     id: 4,
@@ -58,7 +62,8 @@ export const books = [
     reads: "3.1M",
     platform: "Webnovel",
     status: "Completed",
-    rating: 4.8
+    rating: 4.8,
+    isFeatured: true
   }
 ];
 
@@ -70,7 +75,8 @@ export const bookCovers = [
     genre: "Epic Fantasy",
     image: "https://images.unsplash.com/photo-1589998059171-988d887df646?w=600&h=900&fit=crop",
     year: 2024,
-    description: "A majestic dragon-themed cover featuring intricate golden details and mystical elements."
+    description: "A majestic dragon-themed cover featuring intricate golden details and mystical elements.",
+    isTrending: true
   },
   {
     id: 2,
@@ -79,7 +85,8 @@ export const bookCovers = [
     genre: "Cyberpunk",
     image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&h=900&fit=crop",
     year: 2024,
-    description: "A futuristic cyberpunk design with vibrant neon colors and urban aesthetics."
+    description: "A futuristic cyberpunk design with vibrant neon colors and urban aesthetics.",
+    isTrending: true
   },
   {
     id: 3,
@@ -88,7 +95,8 @@ export const bookCovers = [
     genre: "Paranormal Romance",
     image: "https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?w=600&h=900&fit=crop",
     year: 2023,
-    description: "A haunting romantic cover featuring moonlit silhouettes and ethereal atmospheric effects."
+    description: "A haunting romantic cover featuring moonlit silhouettes and ethereal atmospheric effects.",
+    isTrending: false
   },
   {
     id: 4,
@@ -97,16 +105,20 @@ export const bookCovers = [
     genre: "Urban Fantasy",
     image: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=600&h=900&fit=crop",
     year: 2024,
-    description: "Modern city meets ancient magic in this stunning urban fantasy cover design."
+    description: "Modern city meets ancient magic in this stunning urban fantasy cover design.",
+    isTrending: true
   }
 ];
 
 export const socialLinks = {
-  webnovel: "https://webnovel.com",
-  wattpad: "https://wattpad.com",
-  royalroad: "https://royalroad.com",
+  webnovel: "https://www.webnovel.com",
+  wattpad: "https://www.wattpad.com",
+  royalroad: "https://www.royalroad.com",
+  fiverr: "https://www.fiverr.com",
+  linktree: "https://linktr.ee",
+  youtube: "https://www.youtube.com",
+  instagram: "https://www.instagram.com",
   twitter: "https://twitter.com",
-  instagram: "https://instagram.com",
   email: "waddle@silenceofscribes.com"
 };
 
@@ -116,3 +128,7 @@ export const contactInfo = {
   availability: "Open for commissions",
   response: "Usually responds within 24-48 hours"
 };
+
+// Featured content for home page
+export const featuredBooks = books.filter(book => book.isFeatured);
+export const trendingCovers = bookCovers.filter(cover => cover.isTrending);
