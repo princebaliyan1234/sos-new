@@ -1,19 +1,25 @@
 import React, { useState } from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Search } from "lucide-react";
+import { Menu, X, Search as SearchIcon } from "lucide-react";
 import { authorInfo } from "./mock";
 import Home from "./pages/Home";
 import MyBooks from "./pages/MyBooks";
 import BookCovers from "./pages/BookCovers";
 import Contact from "./pages/Contact";
+import Search from "./pages/Search";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const isActive = (path) => location.pathname === path;
+
+  const handleSearchClick = () => {
+    navigate("/search");
+  };
 
   return (
     <>
@@ -21,11 +27,15 @@ const Navbar = () => {
         {/* LEFT — LOGO */}
         <Link to="/">
           <motion.div 
-            className="flex items-center gap-3 text-2xl md:text-3xl font-bold text-purple-300 cursor-pointer"
+            className="flex items-center gap-3 cursor-pointer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span>S</span>
+            <img 
+              src={authorInfo.logo} 
+              alt="Silence of Scribes Logo" 
+              className="w-10 h-10 md:w-12 md:h-12 object-contain"
+            />
           </motion.div>
         </Link>
 
@@ -67,11 +77,12 @@ const Navbar = () => {
           </Link>
 
           <motion.button 
+            onClick={handleSearchClick}
             className="w-11 h-11 rounded-full bg-[#24003d]/60 backdrop-blur-xl border border-purple-800/40 shadow-[0_0_20px_rgba(120,0,255,0.25)] flex items-center justify-center hover:scale-110 transition"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <Search className="w-5 h-5 opacity-90" />
+            <SearchIcon className="w-5 h-5 opacity-90" />
           </motion.button>
         </div>
 
@@ -141,10 +152,12 @@ const Navbar = () => {
                   Contact Us
                 </Link>
                 <div className="border-t border-purple-800/30 pt-6 mt-4">
-                  <button className="w-full flex items-center gap-2 justify-center py-2 px-4 rounded-xl bg-[#24003d]/60 border border-purple-800/40 hover:bg-purple-800/20 transition">
-                    <Search className="w-4 h-4" />
-                    Search
-                  </button>
+                  <Link to="/search" onClick={() => setIsMenuOpen(false)}>
+                    <button className="w-full flex items-center gap-2 justify-center py-2 px-4 rounded-xl bg-[#24003d]/60 border border-purple-800/40 hover:bg-purple-800/20 transition">
+                      <SearchIcon className="w-4 h-4" />
+                      Search
+                    </button>
+                  </Link>
                 </div>
               </nav>
             </motion.div>
@@ -173,6 +186,7 @@ function App() {
             <Route path="/mybooks" element={<MyBooks />} />
             <Route path="/bookcovers" element={<BookCovers />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/search" element={<Search />} />
           </Routes>
         </div>
 

@@ -1,9 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Mail, ExternalLink } from "lucide-react";
+import { FaWebnovel } from "react-icons/fa6";
+import { SiWattpad, SiFiverr, SiLinktree, SiYoutube, SiInstagram, SiTwitter } from "react-icons/si";
 import { contactInfo, socialLinks } from "../mock";
 
 const Contact = () => {
+  const socialPlatforms = [
+    { name: "Webnovel", icon: FaWebnovel, url: socialLinks.webnovel, color: "from-red-500 to-orange-500" },
+    { name: "Wattpad", icon: SiWattpad, url: socialLinks.wattpad, color: "from-orange-500 to-yellow-500" },
+    { name: "Fiverr", icon: SiFiverr, url: socialLinks.fiverr, color: "from-green-500 to-emerald-500" },
+    { name: "Linktree", icon: SiLinktree, url: socialLinks.linktree, color: "from-emerald-500 to-teal-500" },
+    { name: "YouTube", icon: SiYoutube, url: socialLinks.youtube, color: "from-red-600 to-red-500" },
+    { name: "Instagram", icon: SiInstagram, url: socialLinks.instagram, color: "from-pink-500 to-purple-500" },
+    { name: "Twitter", icon: SiTwitter, url: socialLinks.twitter, color: "from-blue-400 to-blue-600" },
+  ];
+
   return (
     <div className="min-h-screen">
       <section className="relative mt-20 md:mt-32 px-6 z-20 pb-20">
@@ -23,48 +35,66 @@ const Contact = () => {
             </p>
           </div>
 
+          <div className="relative p-8 md:p-10 rounded-2xl bg-[#140026]/60 backdrop-blur-xl border border-purple-700/30 shadow-2xl overflow-hidden mb-12">
+            <div className="absolute inset-0 bg-gradient-to-t from-white/5 to-transparent opacity-20 pointer-events-none" />
+            
+            <div className="relative">
+              <h3 className="text-2xl font-semibold mb-6 text-center">Contact Information</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <p className="text-sm text-white/60 mb-1">Email</p>
+                  <a href={`mailto:${contactInfo.email}`} className="text-lg text-purple-300 hover:text-purple-200 transition">
+                    {contactInfo.email}
+                  </a>
+                </div>
+                <div>
+                  <p className="text-sm text-white/60 mb-1">Location</p>
+                  <p className="text-lg">{contactInfo.location}</p>
+                </div>
+                <div>
+                  <p className="text-sm text-white/60 mb-1">Availability</p>
+                  <p className="text-lg text-green-400">{contactInfo.availability}</p>
+                </div>
+                <div>
+                  <p className="text-sm text-white/60 mb-1">Response Time</p>
+                  <p className="text-lg">{contactInfo.response}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Social Media Platforms */}
           <div className="relative p-8 md:p-10 rounded-2xl bg-[#140026]/60 backdrop-blur-xl border border-purple-700/30 shadow-2xl overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-t from-white/5 to-transparent opacity-20 pointer-events-none" />
             
-            <div className="relative grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-sm text-white/60 mb-1">Email</p>
-                    <p className="text-lg text-purple-300">{contactInfo.email}</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-white/60 mb-1">Location</p>
-                    <p className="text-lg">{contactInfo.location}</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-white/60 mb-1">Availability</p>
-                    <p className="text-lg text-green-400">{contactInfo.availability}</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-white/60 mb-1">Response Time</p>
-                    <p className="text-lg">{contactInfo.response}</p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-semibold mb-6">Connect With Me</h3>
-                <div className="space-y-3">
-                  {Object.entries(socialLinks).map(([platform, url]) => (
-                    <a
-                      key={platform}
-                      href={url}
+            <div className="relative">
+              <h3 className="text-2xl font-semibold mb-6 text-center">Connect With Me</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {socialPlatforms.map((platform) => {
+                  const Icon = platform.icon;
+                  return (
+                    <motion.a
+                      key={platform.name}
+                      href={platform.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-between p-3 rounded-lg bg-purple-900/20 border border-purple-700/30 hover:bg-purple-800/30 hover:border-purple-500/50 transition group"
+                      className="relative group overflow-hidden"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
                     >
-                      <span className="capitalize font-medium">{platform}</span>
-                      <ExternalLink className="w-4 h-4 opacity-60 group-hover:opacity-100 transition" />
-                    </a>
-                  ))}
-                </div>
+                      <div className="flex items-center justify-between p-4 rounded-lg bg-purple-900/20 border border-purple-700/30 hover:border-purple-500/50 transition">
+                        <div className="flex items-center gap-3">
+                          <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${platform.color} flex items-center justify-center`}>
+                            <Icon className="w-5 h-5 text-white" />
+                          </div>
+                          <span className="font-medium">{platform.name}</span>
+                        </div>
+                        <ExternalLink className="w-4 h-4 opacity-60 group-hover:opacity-100 transition" />
+                      </div>
+                      <div className={`absolute inset-0 bg-gradient-to-r ${platform.color} opacity-0 group-hover:opacity-10 transition rounded-lg pointer-events-none`} />
+                    </motion.a>
+                  );
+                })}
               </div>
             </div>
           </div>
