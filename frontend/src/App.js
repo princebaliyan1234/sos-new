@@ -79,7 +79,7 @@ function App() {
           </a>
           <a 
             className={`hover:text-white transition cursor-pointer ${
-              activeSection === "bookcovers" ? "text-white underline" : "
+              activeSection === "bookcovers" ? "text-white underline" : ""
             }`}
             onClick={() => handleNavClick("bookcovers")}
           >
