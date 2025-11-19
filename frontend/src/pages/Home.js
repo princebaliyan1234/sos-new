@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { BookOpen, Palette, TrendingUp, Eye, Star, ExternalLink } from "lucide-react";
-import { FaWebnovel } from "react-icons/fa6";
+import { FaBook } from "react-icons/fa";
 import { SiWattpad, SiFiverr, SiLinktree, SiYoutube, SiInstagram, SiTwitter } from "react-icons/si";
 import { authorInfo, featuredBooks, trendingCovers, socialLinks } from "../mock";
 
