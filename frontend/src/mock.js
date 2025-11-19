@@ -8,8 +8,8 @@ export const authorInfo = {
   experience: "3 Years",
   platforms: ["Webnovel", "Wattpad", "RoyalRoad", "Scribble Hub"],
   genres: ["Fantasy", "Fiction", "Dark Fantasy", "Adventure"],
-  avatar: "https://customer-assets.emergentagent.com/job_web-mockup/artifacts/xkajzn6l_Untitled%20design%20%286%29.png",
-  logo: "https://customer-assets.emergentagent.com/job_web-mockup/artifacts/pmx3ejds_Untitled%20design.png"
+  avatar: "https://customer-assets.emergentagent.com/job_00245f47-a588-49ed-8da6-6d7af4f40772/artifacts/fms112hj_Untitled%20design%20%286%29.png",
+  logo: "https://customer-assets.emergentagent.com/job_00245f47-a588-49ed-8da6-6d7af4f40772/artifacts/q4w087zg_Untitled%20design.png"
 };
 
 export const books = [
