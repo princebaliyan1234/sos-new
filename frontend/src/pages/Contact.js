@@ -7,7 +7,7 @@ import { contactInfo, socialLinks } from "../mock";
 
 const Contact = () => {
   const socialPlatforms = [
-    { name: "Webnovel", icon: FaWebnovel, url: socialLinks.webnovel, color: "from-red-500 to-orange-500" },
+    { name: "Webnovel", icon: FaBook, url: socialLinks.webnovel, color: "from-red-500 to-orange-500" },
     { name: "Wattpad", icon: SiWattpad, url: socialLinks.wattpad, color: "from-orange-500 to-yellow-500" },
     { name: "Fiverr", icon: SiFiverr, url: socialLinks.fiverr, color: "from-green-500 to-emerald-500" },
     { name: "Linktree", icon: SiLinktree, url: socialLinks.linktree, color: "from-emerald-500 to-teal-500" },
