@@ -168,12 +168,21 @@ const Home = () => {
                       </div>
                     </div>
 
-                    <Link to="/mybooks">
-                      <button className="bg-purple-700/80 hover:bg-purple-600 px-4 py-2 rounded-xl transition shadow-lg text-sm font-medium flex items-center gap-2">
-                        View More
-                        <ExternalLink className="w-4 h-4" />
-                      </button>
-                    </Link>
+                    {book.link ? (
+                      <a href={book.link} target="_blank" rel="noopener noreferrer">
+                        <button className="bg-purple-700/80 hover:bg-purple-600 px-4 py-2 rounded-xl transition shadow-lg text-sm font-medium flex items-center gap-2">
+                          Read on Webnovel
+                          <ExternalLink className="w-4 h-4" />
+                        </button>
+                      </a>
+                    ) : (
+                      <Link to="/mybooks">
+                        <button className="bg-purple-700/80 hover:bg-purple-600 px-4 py-2 rounded-xl transition shadow-lg text-sm font-medium flex items-center gap-2">
+                          View More
+                          <ExternalLink className="w-4 h-4" />
+                        </button>
+                      </Link>
+                    )}
                   </div>
                 </div>
               </motion.div>
