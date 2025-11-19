@@ -101,7 +101,7 @@ const Home = () => {
           </a>
           <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer"
              className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
-            <SiTwitter className="w-5 h-5" />
+            <FaTwitter className="w-5 h-5" />
           </a>
         </motion.div>
       </section>
