@@ -13,7 +13,7 @@ const Contact = () => {
     { name: "Linktree", icon: SiLinktree, url: socialLinks.linktree, color: "from-emerald-500 to-teal-500" },
     { name: "YouTube", icon: SiYoutube, url: socialLinks.youtube, color: "from-red-600 to-red-500" },
     { name: "Instagram", icon: SiInstagram, url: socialLinks.instagram, color: "from-pink-500 to-purple-500" },
-    { name: "Twitter", icon: SiTwitter, url: socialLinks.twitter, color: "from-blue-400 to-blue-600" },
+    { name: "Twitter", icon: FaTwitter, url: socialLinks.twitter, color: "from-blue-400 to-blue-600" },
   ];
 
   return (
