@@ -73,7 +73,7 @@ export const bookCovers = [
 ];
 
 export const socialLinks = {
-  webnovel: "https://www.webnovel.com",
+  webnovel: "https://www.webnovel.com/profile/4324804498?appId=10",
   wattpad: "https://www.wattpad.com",
   royalroad: "https://www.royalroad.com",
   fiverr: "https://www.fiverr.com",
