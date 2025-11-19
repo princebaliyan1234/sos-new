@@ -15,55 +15,17 @@ export const authorInfo = {
 export const books = [
   {
     id: 1,
-    title: "The Shadow Realm Chronicles",
-    genre: "Dark Fantasy",
-    description: "A tale of forbidden magic, ancient prophecies, and the thin line between light and darkness. Follow Kael as he navigates a world where shadows hold more than just secrets.",
-    cover: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&h=900&fit=crop",
-    chapters: 145,
-    reads: "2.4M",
+    title: "Surviving in the Freezing Apocalypse with My Alpha",
+    genre: "Romance",
+    description: "When a deadly Freezing Apocalypse strikes, 12th-grader Ava is trapped in a school overrun by monstrous frostborn creatures. Forced to fight for survival, she crosses every boundary she once swore she'd never break—battling not only the horrors outside but also the ghosts of her past. As she struggles to protect her loved ones, she finds herself drawn back to Liam, the boy who once abandoned her, but now may be her only chance at survival.",
+    cover: "https://67cd0def5e0d2d4699c652e9--silenceofscribes-sos.netlify.app/images/book%201%20cover.webp",
+    chapters: 50,
+    reads: "10K+",
     platform: "Webnovel",
     status: "Ongoing",
     rating: 4.8,
-    isFeatured: true
-  },
-  {
-    id: 2,
-    title: "Echoes of Eternity",
-    genre: "Fantasy Adventure",
-    description: "When time fractures, heroes rise from unexpected places. An epic journey through parallel timelines where every choice echoes through eternity.",
-    cover: "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=600&h=900&fit=crop",
-    chapters: 98,
-    reads: "1.8M",
-    platform: "Wattpad",
-    status: "Completed",
-    rating: 4.7,
-    isFeatured: false
-  },
-  {
-    id: 3,
-    title: "Whispers in the Void",
-    genre: "Sci-Fi Fantasy",
-    description: "In the space between worlds, whispers become screams. A mind-bending fusion of science fiction and fantasy that questions the nature of reality itself.",
-    cover: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&h=900&fit=crop",
-    chapters: 72,
-    reads: "1.2M",
-    platform: "RoyalRoad",
-    status: "Ongoing",
-    rating: 4.9,
-    isFeatured: false
-  },
-  {
-    id: 4,
-    title: "Crown of Thorns and Starlight",
-    genre: "Romantic Fantasy",
-    description: "A cursed prince, a rebellious star-weaver, and a kingdom on the brink of war. Love blooms in the darkest of times in this sweeping romantic fantasy.",
-    cover: "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=600&h=900&fit=crop",
-    chapters: 110,
-    reads: "3.1M",
-    platform: "Webnovel",
-    status: "Completed",
-    rating: 4.8,
-    isFeatured: true
+    isFeatured: true,
+    link: "https://www.webnovel.com/book/surviving-in-the-freezing-apocalypse-with-my-alpha_31926521808111605"
   }
 ];
 
