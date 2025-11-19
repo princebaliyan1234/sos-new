@@ -69,10 +69,19 @@ const MyBooks = () => {
                       </div>
                     </div>
 
-                    <button className="mt-4 bg-purple-700/80 hover:bg-purple-600 px-4 py-2 rounded-xl transition shadow-lg text-sm font-medium flex items-center gap-2">
-                      Read on {book.platform}
-                      <ExternalLink className="w-4 h-4" />
-                    </button>
+                    {book.link ? (
+                      <a href={book.link} target="_blank" rel="noopener noreferrer">
+                        <button className="mt-4 bg-purple-700/80 hover:bg-purple-600 px-4 py-2 rounded-xl transition shadow-lg text-sm font-medium flex items-center gap-2">
+                          Read on {book.platform}
+                          <ExternalLink className="w-4 h-4" />
+                        </button>
+                      </a>
+                    ) : (
+                      <button className="mt-4 bg-purple-700/80 hover:bg-purple-600 px-4 py-2 rounded-xl transition shadow-lg text-sm font-medium flex items-center gap-2">
+                        Read on {book.platform}
+                        <ExternalLink className="w-4 h-4" />
+                      </button>
+                    )}
                   </div>
                 </div>
               </motion.div>
