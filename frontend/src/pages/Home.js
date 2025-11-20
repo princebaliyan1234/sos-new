@@ -234,7 +234,7 @@ const Home = () => {
             {trendingCovers.map((cover, i) => (
               <motion.div
                 key={cover.id}
-                className="relative group cursor-pointer"
+                className="relative group cursor-pointer hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transition-all duration-300 rounded-xl"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
