@@ -10,11 +10,13 @@ const Contact = () => {
   const socialPlatforms = [
     { name: "Webnovel", icon: FaBook, url: socialLinks.webnovel, color: "from-red-500 to-orange-500" },
     { name: "Wattpad", icon: SiWattpad, url: socialLinks.wattpad, color: "from-orange-500 to-yellow-500" },
+    { name: "RoyalRoad", icon: BookOpen, url: socialLinks.royalroad, color: "from-blue-600 to-indigo-600" },
+    { name: "Honeyfeed", icon: SiHoneygain, url: socialLinks.honeyfeed, color: "from-yellow-500 to-amber-500" },
     { name: "Fiverr", icon: SiFiverr, url: socialLinks.fiverr, color: "from-green-500 to-emerald-500" },
     { name: "Linktree", icon: SiLinktree, url: socialLinks.linktree, color: "from-emerald-500 to-teal-500" },
     { name: "YouTube", icon: SiYoutube, url: socialLinks.youtube, color: "from-red-600 to-red-500" },
     { name: "Instagram", icon: SiInstagram, url: socialLinks.instagram, color: "from-pink-500 to-purple-500" },
-    { name: "Twitter", icon: FaTwitter, url: socialLinks.twitter, color: "from-blue-400 to-blue-600" },
+    { name: "Discord", icon: FaDiscord, url: socialLinks.discord, color: "from-indigo-500 to-purple-600" },
   ];
 
   return (
