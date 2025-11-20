@@ -6,7 +6,7 @@ export const authorInfo = {
   tagline: "Author • Graphic Designer",
   bio: "Hello! My name is Waddle, also known as Silence of Scribes. I have been writing on Webnovel and other platforms since 2023, with a total writing experience of three years. Currently, I am an established author on Webnovel. I also create delightful book covers for myself and fellow authors.",
   experience: "3 Years",
-  platforms: ["Webnovel", "Wattpad", "RoyalRoad", "Scribble Hub"],
+  platforms: ["Webnovel", "Wattpad", "RoyalRoad", "Honeyfeed"],
   genres: ["Romance", "Apocalypse", "Supernatural", "School Life"],
   avatar: "https://customer-assets.emergentagent.com/job_00245f47-a588-49ed-8da6-6d7af4f40772/artifacts/fms112hj_Untitled%20design%20%286%29.png",
   logo: "https://customer-assets.emergentagent.com/job_00245f47-a588-49ed-8da6-6d7af4f40772/artifacts/q4w087zg_Untitled%20design.png"
