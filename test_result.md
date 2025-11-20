@@ -272,7 +272,7 @@ agent_communication:
       - API connectivity: ✅ GET /api/ returns {"message": "Hello World"}
       - MongoDB operations: ✅ Both POST and GET /api/status working correctly
       - Error handling: ✅ 404 responses for invalid endpoints
-      - Backend accessible via production URL: https://book-haven-19.preview.emergentagent.com
+      - Backend accessible via production URL: https://silenceofscribes.preview.emergentagent.com
       
       Minor note: CORS OPTIONS returns 405 but actual CORS functionality works fine through middleware.
       Backend is fully operational and ready for production use.

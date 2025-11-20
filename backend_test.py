@@ -11,7 +11,7 @@ import os
 from datetime import datetime
 
 # Get backend URL from environment
-BACKEND_URL = "https://book-haven-19.preview.emergentagent.com"
+BACKEND_URL = "https://silenceofscribes.preview.emergentagent.com"
 API_BASE = f"{BACKEND_URL}/api"
 
 def test_api_connectivity():
