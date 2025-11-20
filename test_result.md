@@ -301,12 +301,13 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Verify homepage displays correctly with new profile pic and logo"
-    - "Test social media icon links"
-    - "Verify search functionality"
-    - "Check contact page social links"
+    - "Verify logo is rounded (border-radius applied)"
+    - "Test all updated social media links (Linktree, Instagram, YouTube, Wattpad, Fiverr, RoyalRoad, Honeyfeed, Discord)"
+    - "Verify new social icons display correctly on homepage"
+    - "Verify new social platforms on contact page"
+    - "Check platform badges show 'Honeyfeed' instead of 'Scribble Hub'"
   stuck_tasks: []
-  test_all: true
+  test_all: false
   test_priority: "high_first"
 
 agent_communication:
