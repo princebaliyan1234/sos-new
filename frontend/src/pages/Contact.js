@@ -85,7 +85,7 @@ const Contact = () => {
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                     >
-                      <div className="flex items-center justify-between p-4 rounded-lg bg-purple-900/20 border border-purple-700/30 hover:border-purple-500/50 transition">
+                      <div className="flex items-center justify-between p-4 rounded-lg bg-purple-900/20 border border-purple-700/30 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all duration-300">
                         <div className="flex items-center gap-3">
                           <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${platform.color} flex items-center justify-center`}>
                             <Icon className="w-5 h-5 text-white" />
