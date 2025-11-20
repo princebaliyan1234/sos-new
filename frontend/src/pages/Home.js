@@ -178,14 +178,14 @@ const Home = () => {
 
                     {book.link ? (
                       <a href={book.link} target="_blank" rel="noopener noreferrer">
-                        <button className="bg-purple-700/80 hover:bg-purple-600 px-4 py-2 rounded-xl transition shadow-lg text-sm font-medium flex items-center gap-2">
+                        <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 px-4 py-2 rounded-xl transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(236,72,153,0.5)] text-sm font-medium flex items-center gap-2">
                           Read on Webnovel
                           <ExternalLink className="w-4 h-4" />
                         </button>
                       </a>
                     ) : (
                       <Link to="/mybooks">
-                        <button className="bg-purple-700/80 hover:bg-purple-600 px-4 py-2 rounded-xl transition shadow-lg text-sm font-medium flex items-center gap-2">
+                        <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 px-4 py-2 rounded-xl transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(236,72,153,0.5)] text-sm font-medium flex items-center gap-2">
                           View More
                           <ExternalLink className="w-4 h-4" />
                         </button>
