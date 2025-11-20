@@ -136,7 +136,7 @@ const Home = () => {
             {featuredBooks.map((book, i) => (
               <motion.div
                 key={book.id}
-                className="relative p-6 rounded-2xl bg-[#170026]/70 backdrop-blur-xl border border-white/10 shadow-2xl overflow-hidden group hover:border-purple-500/50 transition-all duration-300"
+                className="relative p-6 rounded-2xl bg-[#170026]/70 backdrop-blur-xl border border-white/10 shadow-2xl overflow-hidden group hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] transition-all duration-300"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
