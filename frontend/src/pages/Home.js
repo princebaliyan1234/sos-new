@@ -76,39 +76,39 @@ const Home = () => {
           transition={{ delay: 0.6 }}
         >
           <a href={socialLinks.webnovel} target="_blank" rel="noopener noreferrer" 
-             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
+             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] transition-all duration-300">
             <FaBook className="w-5 h-5" />
           </a>
           <a href={socialLinks.wattpad} target="_blank" rel="noopener noreferrer"
-             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
+             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] transition-all duration-300">
             <SiWattpad className="w-5 h-5" />
           </a>
           <a href={socialLinks.royalroad} target="_blank" rel="noopener noreferrer"
-             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
+             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] transition-all duration-300">
             <BookOpen className="w-5 h-5" />
           </a>
           <a href={socialLinks.honeyfeed} target="_blank" rel="noopener noreferrer"
-             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
+             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] transition-all duration-300">
             <SiHoneygain className="w-5 h-5" />
           </a>
           <a href={socialLinks.fiverr} target="_blank" rel="noopener noreferrer"
-             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
+             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] transition-all duration-300">
             <SiFiverr className="w-5 h-5" />
           </a>
           <a href={socialLinks.linktree} target="_blank" rel="noopener noreferrer"
-             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
+             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] transition-all duration-300">
             <SiLinktree className="w-5 h-5" />
           </a>
           <a href={socialLinks.youtube} target="_blank" rel="noopener noreferrer"
-             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
+             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] transition-all duration-300">
             <SiYoutube className="w-5 h-5" />
           </a>
           <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer"
-             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
+             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] transition-all duration-300">
             <SiInstagram className="w-5 h-5" />
           </a>
           <a href={socialLinks.discord} target="_blank" rel="noopener noreferrer"
-             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
+             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] transition-all duration-300">
             <FaDiscord className="w-5 h-5" />
           </a>
         </motion.div>
