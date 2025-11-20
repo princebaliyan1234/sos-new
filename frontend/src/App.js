@@ -34,7 +34,7 @@ const Navbar = () => {
             <img 
               src={authorInfo.logo} 
               alt="Silence of Scribes Logo" 
-              className="w-10 h-10 md:w-12 md:h-12 object-contain"
+              className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-full"
             />
           </motion.div>
         </Link>
