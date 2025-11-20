@@ -287,7 +287,7 @@ const Home = () => {
           <motion.img
             src={authorInfo.logo}
             alt="Silence of Scribes Logo"
-            className="relative w-48 h-48 md:w-56 md:h-56 object-contain"
+            className="relative w-48 h-48 md:w-56 md:h-56 object-contain rounded-full"
             animate={{ rotate: 360 }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           />
