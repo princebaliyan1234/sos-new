@@ -83,6 +83,14 @@ const Home = () => {
              className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
             <SiWattpad className="w-5 h-5" />
           </a>
+          <a href={socialLinks.royalroad} target="_blank" rel="noopener noreferrer"
+             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
+            <BookOpen className="w-5 h-5" />
+          </a>
+          <a href={socialLinks.honeyfeed} target="_blank" rel="noopener noreferrer"
+             className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
+            <SiHoneygain className="w-5 h-5" />
+          </a>
           <a href={socialLinks.fiverr} target="_blank" rel="noopener noreferrer"
              className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
             <SiFiverr className="w-5 h-5" />
@@ -99,9 +107,9 @@ const Home = () => {
              className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
             <SiInstagram className="w-5 h-5" />
           </a>
-          <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer"
+          <a href={socialLinks.discord} target="_blank" rel="noopener noreferrer"
              className="w-12 h-12 rounded-full bg-purple-900/30 border border-purple-700/50 flex items-center justify-center hover:bg-purple-800/40 hover:scale-110 transition">
-            <FaTwitter className="w-5 h-5" />
+            <FaDiscord className="w-5 h-5" />
           </a>
         </motion.div>
       </section>
