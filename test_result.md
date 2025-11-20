@@ -241,6 +241,57 @@ frontend:
       - working: true
         agent: "main"
         comment: "Contact page has all social media platforms with proper styling and links"
+      - working: true
+        agent: "main"
+        comment: "Updated with actual URLs and added Discord, RoyalRoad, Honeyfeed platforms. Removed Twitter."
+
+  - task: "Update social media links with actual URLs"
+    implemented: true
+    working: "NA"
+    file: "mock.js, Home.js, Contact.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Updated all social links: Linktree, Instagram, YouTube, Wattpad, Fiverr, and added RoyalRoad, Honeyfeed, Discord. All links point to actual user profiles."
+
+  - task: "Make logo rounded"
+    implemented: true
+    working: "NA"
+    file: "App.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Added 'rounded-full' class to logo image in navbar (equivalent to border-radius: 50%)"
+
+  - task: "Add new social platform icons"
+    implemented: true
+    working: "NA"
+    file: "Home.js, Contact.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Added Discord (FaDiscord), RoyalRoad (BookOpen), and Honeyfeed (SiHoneygain) icons to both Home and Contact pages"
+
+  - task: "Update platform badges"
+    implemented: true
+    working: "NA"
+    file: "mock.js"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Changed platform badges from 'Scribble Hub' to 'Honeyfeed' as user is on Honeyfeed but not Scribble Hub"
 
 metadata:
   created_by: "main_agent"
