@@ -74,13 +74,14 @@ export const bookCovers = [
 
 export const socialLinks = {
   webnovel: "https://www.webnovel.com/profile/4324804498?appId=10",
-  wattpad: "https://www.wattpad.com",
-  royalroad: "https://www.royalroad.com",
-  fiverr: "https://www.fiverr.com",
-  linktree: "https://linktr.ee",
-  youtube: "https://www.youtube.com",
-  instagram: "https://www.instagram.com",
-  twitter: "https://twitter.com",
+  wattpad: "https://www.wattpad.com/user/Silence_of_Scribes/about",
+  royalroad: "https://www.royalroad.com/profile/620920",
+  honeyfeed: "https://www.honeyfeed.fm/u/21987/novels",
+  fiverr: "https://www.fiverr.com/s/xXgyEW4",
+  linktree: "https://linktr.ee/Silence_of_Scribes?utm_source=linktree_profile_share&ltsid=887dac64-8db9-4340-a87f-eb5b93bc0944",
+  youtube: "https://youtube.com/@silenceofscribes?si=VzVKf9vQhWPyoYKm",
+  instagram: "https://www.instagram.com/silenceofscribes",
+  discord: "https://discord.gg/XxKzDAsDcF",
   email: "waddle@silenceofscribes.com"
 };
 
