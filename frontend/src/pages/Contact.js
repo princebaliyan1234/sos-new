@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Mail, ExternalLink } from "lucide-react";
-import { FaBook, FaTwitter } from "react-icons/fa";
-import { SiWattpad, SiFiverr, SiLinktree, SiYoutube, SiInstagram } from "react-icons/si";
+import { FaBook, FaDiscord } from "react-icons/fa";
+import { SiWattpad, SiFiverr, SiLinktree, SiYoutube, SiInstagram, SiHoneygain } from "react-icons/si";
+import { BookOpen } from "lucide-react";
 import { contactInfo, socialLinks } from "../mock";
 
 const Contact = () => {
