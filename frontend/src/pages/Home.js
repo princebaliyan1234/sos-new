@@ -265,7 +265,7 @@ const Home = () => {
           <div className="text-center mt-8">
             <Link to="/bookcovers">
               <motion.button
-                className="px-8 py-3 rounded-xl bg-purple-700/80 hover:bg-purple-600 transition shadow-lg font-medium flex items-center gap-2 mx-auto"
+                className="px-8 py-3 rounded-xl bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 hover:from-pink-500 hover:via-purple-500 hover:to-indigo-500 transition-all duration-300 shadow-lg hover:shadow-[0_0_25px_rgba(236,72,153,0.6)] font-medium flex items-center gap-2 mx-auto"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
